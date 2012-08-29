@@ -1,0 +1,14 @@
+.list-of-links {
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style: none;
+    border-bottom: 1px solid $color-reverse;
+  }
+
+  a {
+    display: block;
+    padding: 0.2em 0;
+  }
+}

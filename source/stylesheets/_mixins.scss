@@ -1,0 +1,8 @@
+@mixin reverse-bg {
+  background: $color-alt;
+  color: $color-reverse-alt;
+
+  a, em {
+    color: $color-reverse;
+  }
+}

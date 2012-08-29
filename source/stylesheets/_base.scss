@@ -3,12 +3,11 @@ body {
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $color-base;
-  margin: 0 10px;
+  background: $color-alt;
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3em;
-  color: $color-base;
 }
 
 h1 {

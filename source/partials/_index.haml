@@ -1,22 +1,29 @@
-%h1
-  Hi, my name is 
-  %em
-    %a{:href => '#/'} Kris Urbas
-%h2
-  I'm mainly
-  %em web developer
-  and
-  %em UX designer
-  but I am
-  %em open for new oportunities!
-%h3
-  What next?
+.image-of-me-box
+  %img{:src => image_path('krzys2011.jpg'), :alt => 'photo of me'}
 
-%ul
-  %li
-    %a{:href => '#/about'} tell me more about you
-  %li
-    %a{:href => '#/benefits'} why I should hire you?
-  %li
-    %a{:href => '#/contact'} how can I contact you?
-    // I have an outstanding job offer for you 
+.message-box.my-message
+  %h1
+    Hi, my name is 
+    %em
+      %a{:href => '#/'} Kris Urbas
+  %h2
+    I'm mainly
+    %em web developer
+    and
+    %em UX designer
+    but I am
+    %em open for new oportunities!
+
+.separator
+  %h3.separator-text
+    What next?
+
+.message-box.your-message
+  %ul.list-of-links
+    %li
+      %a{:href => '#/about'} tell me more about you
+    %li
+      %a{:href => '#/benefits'} why I should hire you?
+    %li
+      %a{:href => '#/contact'} how can I contact you?
+      // I have an outstanding job offer for you 

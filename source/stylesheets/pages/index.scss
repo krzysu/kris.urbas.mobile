@@ -1,3 +1,50 @@
 #index-page {
   display: none;
+  @include pie-clearfix;
+}
+
+.message-box {
+  @include reverse-bg;
+  margin-bottom: 1em;
+  padding: 1em;
+  @include box-sizing(border-box);
+
+  em {
+    color: $color-reverse;
+  }
+}
+
+.my-message {
+  float: right;
+  width: 55%;
+  
+  top: 10%;
+  right: 0;
+}
+
+.image-of-me-box {
+  width: 40%;
+  margin-right: 5%;
+  margin-bottom: 1em;
+  float: left;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.separator {
+  clear: right;
+  
+  .separator-text {
+    display: inline-block;
+    background: #111;
+    color: $color-reverse-alt;
+  }
+}
+
+.your-message {
+  clear: both;
+  margin-right: 10%;
 }

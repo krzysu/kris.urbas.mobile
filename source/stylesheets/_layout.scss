@@ -1,5 +1,20 @@
 .wrapper {
-  width: 900px;
+  width: 780px;
   max-width: 100%;
   margin: 0 auto;
+  padding: 0 0.5em;
+  @include box-sizing(border-box);
+}
+
+#content {
+  background: $color-reverse;
+}
+
+#footer {
+  @include reverse-bg;
+  padding: 1em;
+}
+
+.page {
+  padding-bottom: 5em;
 }
