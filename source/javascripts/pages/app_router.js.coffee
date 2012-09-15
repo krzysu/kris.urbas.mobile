@@ -1,12 +1,24 @@
 class KrisMobile.AppRouter extends Backbone.Router
 
-  pages:
-    0: "!/"
-    1: "!/about"
-    2: "!/benefits"
-    3: "!/contact"
+  pagesOnSlider:
+    0:
+      name: 'index'
+      path: '!/'
+    1:
+      name: 'about'
+      path: '!/about'
+    2:
+      name: 'benefits'
+      path: '!/benefits'
+    3:
+      name: 'contact'
+      path: '!/contact'
 
-  initialize: ->
+  constructor: ->
+    _.each @pagesOnSlider, (item, index) =>
+      @routes[item.path] = item.name
+
+    super()
     @initMainSlider()
 
   initMainSlider: ->
@@ -16,18 +28,16 @@ class KrisMobile.AppRouter extends Backbone.Router
       directionNav: false
       controlNav: false
       after: (slider) =>
-        @navigate @pages[slider.currentSlide],
+        @navigate @pagesOnSlider[slider.currentSlide]['path'],
           trigger:
             false
 
     @slider = $slider.data('flexslider')
 
   routes:
-    "": "index"
-    "!/": "index"
-    "!/about": "about"
-    "!/benefits": "benefits"
-    "!/contact": "contact"
+    '': 'index'
+    '!/making-of': 'makingOf'
+    # rest of routes in pagesOnSlider object
 
   index: ->
     console.log 'index page'
@@ -46,6 +56,11 @@ class KrisMobile.AppRouter extends Backbone.Router
     @moveToPage(3)
 
   moveToPage: (target) ->
-    # if target > @slider.currentSlide then @slider.direction = "next" else @slider.direction = "prev"
+    $('#main-slider').show()
+    $('.hidden-page').hide()
     @slider.flexAnimate(target, true)
+
+  makingOf: ->
+    $('#main-slider').hide()
+    $('#making-of-page').show()
 
