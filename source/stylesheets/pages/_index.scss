@@ -1,5 +1,4 @@
 #index-page {
-  display: none;
   @include pie-clearfix;
 }
 
@@ -34,17 +33,7 @@
   }
 }
 
-.separator {
+.call-to-action-box {
   clear: right;
-  
-  .separator-text {
-    display: inline-block;
-    background: #111;
-    color: $color-reverse-alt;
-  }
 }
 
-.your-message {
-  clear: both;
-  margin-right: 10%;
-}

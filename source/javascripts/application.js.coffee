@@ -1,6 +1,7 @@
 #= require_self
 #= require libs/underscore-min
 #= require libs/backbone-min
+#= require libs/jquery.flexslider
 #= require_tree ./pages
 #= require app_controller
 
