@@ -26,6 +26,11 @@ KrisMobile.Slider =
       functionName: 'contact'
       path: '!/contact'
 
+    'making-of-page':
+      functionName: 'makingOf'
+      path: '!/making-of'
+      hidden: true
+
 
   init: (router) ->
     $slider = $('#main-slider').find('.flexslider').flexslider
@@ -68,15 +73,11 @@ KrisMobile.Slider =
     @removeHidden()
 
 
-  removeHidden: (currentSlideNumber) ->
+  removeHidden: ->
     currentSlideName = @getSlideName(@slider.currentSlide)
-
-    console.log 'before', @slider.currentSlide
 
     _.each @pages, (item, index) =>
       if item.hidden? && item.hidden == true && currentSlideName != index
         number = @getNumberOfSlide(index)
         if number?
           @slider.removeSlide(number)
-        
-    console.log 'after', @slider.currentSlide

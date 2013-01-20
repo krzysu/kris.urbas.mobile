@@ -15,11 +15,9 @@ class KrisMobile.AppRouter extends Backbone.Router
     # rest of routes in KrisMobile.Slider.pages object
 
   index: ->
-    console.log 'index page'
     @slider.moveTo('index-page')
 
   about: ->
-    console.log 'about page'
     @slider.moveTo('about-page')
 
   aboutOpenSource: ->
@@ -33,16 +31,18 @@ class KrisMobile.AppRouter extends Backbone.Router
     # @slider.moveTo('about-open-source-page')
 
   benefits: ->
-    console.log 'benefits page'
     @slider.moveTo('benefits-page')
     
   contact: ->
-    console.log 'contact page'
     @slider.moveTo('contact-page')
 
   makingOf: ->
-    $('#main-slider').hide()
-    $('#making-of-page').show()
+    @slider.slider.addSlide( $('#making-of-page').clone(), @slider.slider.currentSlide )
+    setTimeout(
+      =>
+        @slider.moveTo('making-of-page')
+      ,
+      200)
 
 
 
