@@ -2,7 +2,7 @@
 #= require libs/underscore-min
 #= require libs/backbone-min
 #= require libs/jquery.flexslider
-#= require_tree ./pages
+#= require_tree ./sources
 #= require app_controller
 
 unless window.KrisMobile?

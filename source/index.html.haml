@@ -1,18 +1,23 @@
 #main-slider
   .flexslider
     %ul.slides
-      %li
-        #index-page.page
+      %li#index-page
+        .page
           = partial 'partials/index'
-      %li
-        #about-page.page
+      %li#about-page
+        .page
           = partial 'partials/about'
-      %li
-        #benefits-page.page
+      %li#benefits-page
+        .page
           = partial 'partials/benefits'
-      %li
-        #contact-page.page
+      %li#contact-page
+        .page
           = partial 'partials/contact'
+
+%ul.hidden
+  %li#about-open-source-page
+    .page
+      %h1 My best open source projects
 
 #making-of-page.hidden-page
   %h2 Making of page
