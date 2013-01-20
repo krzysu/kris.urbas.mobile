@@ -37,3 +37,31 @@
   clear: right;
 }
 
+
+
+#about-page {
+  // display: none;
+   
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+
+    a {
+      display: block;
+      padding: 1em 2em;
+      margin-bottom: 0.2em;
+      background: #eee;
+    }
+  }
+}
+
+#benefits-page {
+  // display: none;
+}
+
+#contact-page {
+  // display: none;
+}

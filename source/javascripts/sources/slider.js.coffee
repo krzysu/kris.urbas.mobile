@@ -16,6 +16,7 @@ KrisMobile.Slider =
     'about-open-source-page':
       functionName: 'aboutOpenSource'
       path: '!/about-open-source'
+      hidden: true
     
     'benefits-page':
       functionName: 'benefits'
@@ -39,6 +40,8 @@ KrisMobile.Slider =
           trigger:
             false
 
+        @removeHidden()
+
     @slider = $slider.data('flexslider')
 
 
@@ -59,4 +62,21 @@ KrisMobile.Slider =
     if(typeof target == 'string')
       target = @getNumberOfSlide(target)
 
+    $(window).scrollTop(0)
     @slider.flexAnimate(target, true)
+
+    @removeHidden()
+
+
+  removeHidden: (currentSlideNumber) ->
+    currentSlideName = @getSlideName(@slider.currentSlide)
+
+    console.log 'before', @slider.currentSlide
+
+    _.each @pages, (item, index) =>
+      if item.hidden? && item.hidden == true && currentSlideName != index
+        number = @getNumberOfSlide(index)
+        if number?
+          @slider.removeSlide(number)
+        
+    console.log 'after', @slider.currentSlide

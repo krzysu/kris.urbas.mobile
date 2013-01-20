@@ -11,6 +11,10 @@
   background: $color-reverse;
 }
 
+#header {
+  background: $color-reverse;
+}
+
 #footer {
   @include reverse-bg;
   padding: 1em;
@@ -27,4 +31,9 @@
 .hidden-page {
   display: none;
   padding-bottom: 5em;
+}
+
+.go-to-menu {
+  padding: 0.5em 1em;
+  background: #eee;
 }
