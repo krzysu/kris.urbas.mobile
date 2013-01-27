@@ -1,40 +1,26 @@
 #index-page {
-  @include pie-clearfix;
-}
-
-.message-box {
-  @include reverse-bg;
-  margin-bottom: 1em;
-  padding: 1em;
-  @include box-sizing(border-box);
-
-  em {
-    color: $color-reverse;
-  }
-}
-
-.my-message {
-  float: right;
-  width: 55%;
   
-  top: 10%;
-  right: 0;
-}
+  h1, h2, h3 {
+    text-align: center;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.image-of-me-box {
-  width: 40%;
-  margin-right: 5%;
-  margin-bottom: 1em;
-  float: left;
+  .image {
+    background-image: url(../images/krzys2011.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 12em;
 
-  img {
-    width: 100%;
-    display: block;
+    margin: 0 auto;
+    max-width: 20em;
   }
 }
 
 .call-to-action-box {
-  clear: right;
+  text-align: center;
 }
 
 

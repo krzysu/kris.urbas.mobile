@@ -5,7 +5,7 @@ class KrisMobile.AutoScroller
     $("html:not(:animated), body:not(:animated)").animate
       scrollTop: destination
     ,
-      duration: 'normal'
+      duration: 'fast'
       complete: ->
         if afterCallback? and typeof afterCallback == 'function'
           afterCallback()

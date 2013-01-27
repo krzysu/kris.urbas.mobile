@@ -7,33 +7,65 @@
 }
 
 #content {
-  padding-top: 1em;
   background: $color-reverse;
 }
 
 #header {
-  background: $color-reverse;
+  background: $color-alt;
+  
+  .wrapper {
+    @include pie-clearfix;
+  }
+
+  .title {
+    color: $color-reverse-alt;
+    line-height: 2.5em;
+    float: left;
+  }
+}
+
+.index-page #header .title {
+  display: none;
 }
 
 #footer {
   @include reverse-bg;
-  padding: 1em;
+  padding: 1em 0;
 }
 
 .page {
-  padding-bottom: 5em;
-}
-
-.hidden {
-  display: none;
-}
-
-.hidden-page {
-  display: none;
-  padding-bottom: 5em;
+  padding-bottom: 6em;
 }
 
 .go-to-menu {
-  padding: 0.5em 1em;
-  background: #eee;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAARCAYAAAAyhueAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACVJREFUeNpi/A8EDFQGTAw0ADQxdBRQHzCOJqlRMJqkqAgAAgwAxggMBCM7bBAAAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 2.5em;
+  height: 2.5em;
+  text-indent: -9999px;
+  display: inline-block;
+
+  float: right;
+}
+
+#menu {
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style: none;
+    border-bottom: 1px solid $color-reverse;
+
+    &:first-child {
+      border-top: 1px solid $color-reverse;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 1em 2em;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }

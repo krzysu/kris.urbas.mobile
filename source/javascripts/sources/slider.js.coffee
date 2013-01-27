@@ -46,6 +46,7 @@ KrisMobile.Slider =
             false
 
         @removeHidden()
+        @setBodyClass(name)
 
     @slider = $slider.data('flexslider')
 
@@ -65,12 +66,14 @@ KrisMobile.Slider =
 
   moveTo: (target) ->
     if(typeof target == 'string')
+      name = target
       target = @getNumberOfSlide(target)
 
-    $(window).scrollTop(0)
-    @slider.flexAnimate(target, true)
-
-    @removeHidden()
+    # $(window).scrollTop(0)
+    KrisMobile.AutoScroller.scrollTo 'body', =>
+      @slider.flexAnimate(target, true)
+      @removeHidden()
+      @setBodyClass(name)
 
 
   removeHidden: ->
@@ -81,3 +84,6 @@ KrisMobile.Slider =
         number = @getNumberOfSlide(index)
         if number?
           @slider.removeSlide(number)
+
+  setBodyClass: (name) ->
+    $('body').removeClass().addClass(name)

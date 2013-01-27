@@ -3,9 +3,8 @@
 }
 
 .ie7 {
-  .some-el li { // display: inline-block fix
+  .some-el { // display: inline-block fix
     zoom: 1;
     display: inline;
-    margin-right: 2px;
   }
 }
