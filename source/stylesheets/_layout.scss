@@ -1,3 +1,15 @@
+#content-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  background-image: url(../images/loader.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
 .wrapper {
   width: 780px;
   max-width: 100%;
@@ -11,14 +23,13 @@
 }
 
 #header {
-  background: $color-alt;
+  @include reverse-bg;
   
   .wrapper {
     @include pie-clearfix;
   }
 
   .title {
-    color: $color-reverse-alt;
     line-height: 2.5em;
     float: left;
   }
@@ -30,6 +41,7 @@
 
 #feedback-section, #share-section {
   @include reverse-bg;
+  min-height: 20em;
 }
 
 #footer {
@@ -54,7 +66,9 @@
   float: right;
 }
 
-#menu-section {
+#main-menu {
+  display: none;
+  clear: both;
   
   ul {
     padding: 0;

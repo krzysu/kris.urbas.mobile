@@ -51,12 +51,16 @@ KrisMobile.Slider =
       directionNav: false
       controlNav: false
 
+      start: ->
+        KrisMobile.Page.show()
+
       after: (slider) =>
         name = @getSlideName(slider.currentSlide)
         router.navigate @pages[name]['path'],
           trigger:
             false
 
+        KrisMobile.MainMenu.hide()
         @removeHidden()
         @setBodyClass(name)
 
@@ -80,6 +84,8 @@ KrisMobile.Slider =
     if(typeof target == 'string')
       name = target
       target = @getNumberOfSlide(target)
+
+    KrisMobile.MainMenu.hide()
 
     # $(window).scrollTop(0)
     KrisMobile.AutoScroller.scrollTo 'body', =>

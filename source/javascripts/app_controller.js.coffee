@@ -4,12 +4,13 @@ $ ->
 class KrisMobile.AppController
   constructor: ->
 
+    @initAnchors()
+    KrisMobile.MainMenu.init()
+
     router = new KrisMobile.AppRouter()
 
     Backbone.history.start
       pushState: false
-
-    @initAnchors()
 
 
   initAnchors: ->
