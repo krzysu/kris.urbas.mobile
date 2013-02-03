@@ -11,7 +11,6 @@ class KrisMobile.AppRouter extends Backbone.Router
 
   routes:
     '': 'index'
-    '!/making-of': 'makingOf'
     # rest of routes in KrisMobile.Slider.pages object
 
   index: ->
@@ -20,29 +19,35 @@ class KrisMobile.AppRouter extends Backbone.Router
   about: ->
     @slider.moveTo('about-page')
 
-  aboutOpenSource: ->
-    position = @slider.getNumberOfSlide('about-page')
-    @slider.slider.addSlide( $('#about-open-source-page').clone(), position + 1 )
-    setTimeout(
-      =>
-        @slider.moveTo('about-open-source-page')
-      ,
-      200)
-    # @slider.moveTo('about-open-source-page')
-
-  benefits: ->
-    @slider.moveTo('benefits-page')
-    
   contact: ->
     @slider.moveTo('contact-page')
 
-  makingOf: ->
-    @slider.slider.addSlide( $('#making-of-page').clone(), @slider.slider.currentSlide )
+  aboutFrontEnd: ->
+    @_createSlideAndMove('about-front-end-page')
+
+  aboutStartups: ->
+    @_createSlideAndMove('about-startups-page')
+
+  aboutOpenSource: ->
+    @_createSlideAndMove('about-open-source-page')
+
+  aboutJobOffer: ->
+    @_createSlideAndMove('about-job-offer-page')
+
+  aboutMusic: ->
+    @_createSlideAndMove('about-music-page')
+
+  _createSlideAndMove: (name, basePageName = 'about-page') ->
+    position = @slider.getNumberOfSlide( basePageName )
+    @slider.slider.addSlide( $('#' + name).clone(), position + 1 )
     setTimeout(
       =>
-        @slider.moveTo('making-of-page')
+        @slider.moveTo(name)
       ,
       200)
+ 
+
+
 
 
 

@@ -41,22 +41,7 @@
 
 
   %body{:class => 'index-page'}
-    
-    %header#header
-      .wrapper
-        .title
-          more than
-          %em web developer
-
-        %a{:href => '#menu', :class => 'go-to-menu'} Menu 
-
-    #content
-      .wrapper
-        = yield
-
-    %footer#footer
-      .wrapper
-        = partial 'partials/footer'
+    = yield
 
     %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
     :javascript

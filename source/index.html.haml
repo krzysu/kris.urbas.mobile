@@ -1,26 +1,54 @@
-#main-slider
-  .flexslider
-    %ul.slides
-      %li#index-page
-        .page
-          = partial 'partials/index'
-      %li#about-page
-        .page
-          = partial 'partials/about'
-      %li#benefits-page
-        .page
-          = partial 'partials/benefits'
-      %li#contact-page
-        .page
-          = partial 'partials/contact'
+%header#header
+  .wrapper
+    %a.title{:href => '#!/'}
+      more than
+      %em web developer
 
+    %a.go-to-menu.anchor{:href => '#menu'} Menu 
+
+// main sections
+%section#main-section
+  .wrapper
+    .flexslider
+      %ul.slides
+        %li#index-page
+          .page
+            = partial 'partials/index'
+        %li#about-page
+          .page
+            = partial 'partials/about'
+        %li#contact-page
+          .page
+            = partial 'partials/contact'
+
+%section#feedback-section
+  .wrapper
+    %h1 like it? share it!
+
+%footer#footer
+  .wrapper
+    = partial 'partials/footer'
+
+
+
+// dynamically created
 %ul.hidden
+  %li#about-front-end-page
+    .page
+      = partial 'partials/about_front_end'
+  %li#about-startups-page
+    .page
+      = partial 'partials/about_startups'
   %li#about-open-source-page
     .page
-      %h1 My best open source projects
-
-  %li#making-of-page
+      = partial 'partials/about_open_source'
+  %li#about-job-offer-page
     .page
-      %h1 Making of page
+      = partial 'partials/about_job_offer'
+  %li#about-music-page
+    .page
+      = partial 'partials/about_music'
+
+
 
 

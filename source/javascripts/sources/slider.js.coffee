@@ -4,6 +4,7 @@ KrisMobile.Slider =
     # 'page-id':
     #   functionName: router callback
     #   path: router url
+    #   hidden: dynamically created
    
     'index-page':
       functionName: 'index'
@@ -12,28 +13,39 @@ KrisMobile.Slider =
     'about-page':
       functionName: 'about'
       path: '!/about'
+
+    'about-front-end-page':
+      functionName: 'aboutFrontEnd'
+      path: '!/about-front-end'
+      hidden: true
     
     'about-open-source-page':
       functionName: 'aboutOpenSource'
       path: '!/about-open-source'
       hidden: true
-    
-    'benefits-page':
-      functionName: 'benefits'
-      path: '!/benefits'
+
+    'about-startups-page':
+      functionName: 'aboutStartups'
+      path: '!/about-startups'
+      hidden: true
+
+    'about-job-offer-page':
+      functionName: 'aboutJobOffer'
+      path: '!/about-job-offer'
+      hidden: true
+
+    'about-music-page':
+      functionName: 'aboutMusic'
+      path: '!/about-music'
+      hidden: true
 
     'contact-page':
       functionName: 'contact'
       path: '!/contact'
 
-    'making-of-page':
-      functionName: 'makingOf'
-      path: '!/making-of'
-      hidden: true
-
 
   init: (router) ->
-    $slider = $('#main-slider').find('.flexslider').flexslider
+    $slider = $('#main-section').find('.flexslider').flexslider
       animation: 'slide'
       slideshow: false
       directionNav: false

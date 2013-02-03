@@ -9,10 +9,11 @@ class KrisMobile.AppController
     Backbone.history.start
       pushState: false
 
-    @initGoToMenu()
+    @initAnchors()
 
 
-  initGoToMenu: ->
-    $('.go-to-menu').on 'click', (e) ->
-      e.preventDefault()
-      KrisMobile.AutoScroller.scrollTo $(e.currentTarget).attr('href')
+  initAnchors: ->
+    $(document).on 'click', 'a', (e) ->
+      if $(e.currentTarget).hasClass('anchor') 
+        e.preventDefault()
+        KrisMobile.AutoScroller.scrollTo $(e.currentTarget).attr('href')

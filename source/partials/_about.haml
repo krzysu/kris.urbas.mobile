@@ -1,46 +1,20 @@
-%h1
-  who am I?
+%article
+  %h1
+    who am I?
 
-%section
-  %header
-    frontend & user experience
-  %p
-    for more than 4 years I've been making the Internet a better place by building and improving various web applications, always with user centric approach
-  %a.button.external-link{:href => '#'}
-    hotel booking app case study
+  .item-list
+    .item-list-element
+      %a{:href => '#!/about-front-end'} frontend & user experience
+    .item-list-element
+      %a{:href => '#!/about-startups'} startups
+    .item-list-element
+      %a{:href => '#!/about-open-source'} open source
+    .item-list-element
+      %a{:href => '#!/about-job-offer'} open mind
+    .item-list-element
+      %a{:href => '#!/about-music'} rocking-your-ass music
 
-%section
-  %header
-    startups
   %p
-    I build simple and powerfull products following The Lean Startup way
-  %p
-    %strong
-      Not sure about your businness?
-  %a.button{:href => '#!/contact'}
-    contact me for free consultation
+    Not interested?
+  %a.button.anchor{:href => '#feedback-section'} Let me know why
 
-%section
-  %header
-    %a{:href => '#!/about-open-source'} open source
-  %p
-    I love freedom, openess, and reusing existing tools to build on top of them, check my github projects
-
-%section
-  %header
-    open mind
-  %p
-    I am always open for new oportunities, if you have an interesting project and you think I would be a good fit...
-  %a.button{:href => '#!/contact'}
-    offer me a job
-  %p or
-  %a.button{:href => '#'}
-    check my CV
-
-%section
-  %header
-    rocking-your-ass music 
-  %p
-    in my free time I play bass guitar with my punk-rap Polish band called Second Best Solution
-  %a.button.external-link{:href => '#'}
-    listen us on soundcloud

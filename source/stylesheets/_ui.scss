@@ -23,3 +23,18 @@
     margin-right: auto;
   }
 }
+
+.item-list {
+  .item-list-element {
+    border-bottom: 1px solid #111;
+    
+    &:first-child {
+      border-top: 1px solid #111;
+    }
+
+    a {
+      display: block;
+      padding: 1em 0;
+    }
+  }
+}
