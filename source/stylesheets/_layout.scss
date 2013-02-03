@@ -28,9 +28,18 @@
   display: none;
 }
 
+#feedback-section, #share-section {
+  @include reverse-bg;
+}
+
 #footer {
   @include reverse-bg;
   padding: 1em 0;
+
+  small {
+    display: block;
+    margin-top: 3em;
+  }
 }
 
 .go-to-menu {
@@ -45,9 +54,19 @@
   float: right;
 }
 
-#menu {
-  padding: 0;
-  margin: 0;
+#menu-section {
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  
+    a {
+      display: block;
+      padding: 1em 2em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
 
   li {
     list-style: none;
@@ -56,12 +75,5 @@
     &:first-child {
       border-top: 1px solid $color-reverse;
     }
-  }
-
-  a {
-    display: block;
-    padding: 1em 2em;
-    text-align: center;
-    text-transform: uppercase;
   }
 }

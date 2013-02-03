@@ -4,7 +4,7 @@
       more than
       %em web developer
 
-    %a.go-to-menu.anchor{:href => '#menu'} Menu 
+    %a.go-to-menu.anchor{:href => '#menu-section'} Menu 
 
 // main sections
 %section#main-section
@@ -21,12 +21,14 @@
           .page
             = partial 'partials/contact'
 
-%section#feedback-section
+%section
   .wrapper
-    %h1 like it? share it!
+    = partial 'partials/share'
+    = partial 'partials/feedback'
 
 %footer#footer
   .wrapper
+    = partial 'partials/menu'
     = partial 'partials/footer'
 
 
