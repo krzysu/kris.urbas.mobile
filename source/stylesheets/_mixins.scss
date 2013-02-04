@@ -6,3 +6,10 @@
     color: $color-reverse;
   }
 }
+
+@mixin icon-base {
+  font-family: $font-family-icons;
+  font-size: 4em;
+  line-height: 1em;
+  display: inline-block;
+}

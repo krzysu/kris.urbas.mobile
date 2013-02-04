@@ -1,20 +1,44 @@
 %article
-  %h1
-    who am I?
+  %header.top-box
+    %h1
+      who am I?
+    %p in a few keywords
 
   .item-list
-    .item-list-element
-      %a{:href => '#!/about-front-end'} frontend & user experience
-    .item-list-element
-      %a{:href => '#!/about-startups'} startups
-    .item-list-element
-      %a{:href => '#!/about-open-source'} open source
-    .item-list-element
-      %a{:href => '#!/about-job-offer'} open mind
-    .item-list-element
-      %a{:href => '#!/about-music'} rocking-your-ass music
+    %a.item-list-element{:href => '#!/about-front-end'}
+      .primary
+        frontend & user experience
+      .secondary
+        case study included
 
-  %p
-    Not interested?
-  %a.button.anchor{:href => '#feedback-section'} let me know why
+    %a.item-list-element{:href => '#!/about-startups'}
+      .primary
+        startups
+      .secondary
+        ask for free consultations
+
+    %a.item-list-element{:href => '#!/about-open-source'}
+      .primary
+        open source
+      .secondary
+        my github projects
+
+    %a.item-list-element{:href => '#!/about-job-offer'}
+      .primary
+        open for oportunities
+      .secondary
+        looking for a talent?
+
+    %a.item-list-element{:href => '#!/about-music'}
+      .primary
+        rocking-your-ass music
+      .secondary
+        free time & hobby
+  
+  .bottom-box  
+    %p
+      Not interested?
+
+    %a.button.anchor{:href => '#feedback-section'}
+      let me know why
 
