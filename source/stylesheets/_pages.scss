@@ -1,7 +1,7 @@
 #index-page {
 
   .image {
-    background-image: url(../images/placeholder.gif);
+    background-image: url(../images/home2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -9,6 +9,14 @@
 
     margin: 0 auto;
     max-width: 80%;
+
+    @include transition(all 1s ease-in-out);
+  }
+
+  @media only screen and (min-width: 30em) {
+    .image {
+      height: 21em;
+    }
   }
 }
 

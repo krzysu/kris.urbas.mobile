@@ -1,23 +1,38 @@
 %article
-  %h1
-    contact me
+  %header.top-box
+    %h1
+      contact me
+    %p guaranteed: 100% response rate
 
-.item-list
-  .item-list-element
-    %a{:href => '#'} send me email
-  .item-list-element
-    %a{:href => '#'} skype me
-  .item-list-element
-    %a{:href => '#'} follow me on twitter
-  .item-list-element
-    %a{:href => '#'} fork me on github
-  .item-list-element
-    %a{:href => '#'} my résumé on zerply
-  .item-list-element
-    %a{:href => '#'} listen to my band
-  .item-list-element
-    %a{:href => '#'} let's meet in Berlin, Germany
 
-%p
-  don't forget to leave some feedback
-%a.button.anchor{:href => '#feedback-section'} leave some feedback
+  .item-list
+    .item-list-element
+      .primary
+        by email
+      .secondary
+        %span{:style => "unicode-bidi:bidi-override;direction:rtl;"} moc.liamg@lp.usyzrk
+
+    .item-list-element
+      .primary
+        by skype
+      .secondary
+        krzysu86
+
+    %a.item-list-element{:href => ''}
+      .primary
+        by twitter
+      .secondary
+        follow @krzysu
+
+    .item-list-element
+      .primary
+        or let's meet
+      .secondary
+        currently in Berlin, Germany
+
+  .bottom-box  
+    %p
+      don't forget to
+
+    %a.button.anchor{:href => '#feedback-section'}
+      leave some feedback
