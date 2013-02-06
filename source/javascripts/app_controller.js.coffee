@@ -5,6 +5,7 @@ class KrisMobile.AppController
   constructor: ->
 
     @initAnchors()
+    @switchImages()
     KrisMobile.MainMenu.init()
 
     router = new KrisMobile.AppRouter()
@@ -18,3 +19,9 @@ class KrisMobile.AppController
       if $(e.currentTarget).hasClass('anchor') 
         e.preventDefault()
         KrisMobile.AutoScroller.scrollTo $(e.currentTarget).attr('href')
+
+  switchImages: ->
+    random0or1 = Math.round(Math.random() * 1)
+
+    if random0or1 == 0
+      $('#index-page .image').addClass('alt')
