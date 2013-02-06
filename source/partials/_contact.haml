@@ -6,25 +6,25 @@
 
 
   .item-list
-    .item-list-element
+    .item-list-element.email
       .primary
         by email
       .secondary
         %span{:style => "unicode-bidi:bidi-override;direction:rtl;"} moc.liamg@lp.usyzrk
 
-    .item-list-element
+    %a.item-list-element.twitter.external{:href => 'https://twitter.com/krzysu'}
+      .primary
+        by twitter
+      .secondary
+        @krzysu
+
+    %a.item-list-element.skype{:href => 'skype:krzysu86?chat'}
       .primary
         by skype
       .secondary
         krzysu86
 
-    %a.item-list-element{:href => ''}
-      .primary
-        by twitter
-      .secondary
-        follow @krzysu
-
-    .item-list-element
+    .item-list-element.location
       .primary
         or let's meet
       .secondary

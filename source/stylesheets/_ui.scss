@@ -59,6 +59,24 @@
     top: 50%;
     margin-top: -0.5em;
   }
+
+  &.email:after {
+    content: '\2709';
+  }
+
+  &.twitter:after {
+    font-family: $font-family-icons-social;
+    content: '\F309';
+  }
+
+  &.skype:after {
+    font-family: $font-family-icons-social;
+    content: '\F339';
+  }
+
+  &.location:after {
+    content: '\27A2';
+  }
 }
 
 a.item-list-element {
