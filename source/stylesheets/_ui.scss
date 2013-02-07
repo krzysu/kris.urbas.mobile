@@ -11,16 +11,48 @@
   font-size: 1.2em;
   font-weight: bold;
   font-family: $font-header;
+
+  @include transition(all 0.2s ease-in-out);
+
+  &:hover {
+    background-color: #222;
+    text-decoration: none;
+  }
+
+  &.with-icon {
+    position: relative;
+    padding-right: 3.5em;
+    
+    &:after {
+      @include icon-base;
+      content: '\E75A';
+
+      font-weight: normal;
+      font-size: 2.5em;
+
+      position: absolute;
+      right: 0.3em;
+      top: 50%;
+      margin-top: -0.5em;
+    }
+  }
+
+  &.external:after {
+    content: '\E715';
+  }
+
+  &.github:after {
+    font-family: $font-family-icons-social;
+    content: '\F300';
+  }
 }
 
 .page {
   padding-bottom: 6em;
-  
-  h1, h2 {
+
+  h2 {
+    @include max-width;
     text-align: center;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -33,6 +65,13 @@
       border-top: 1px solid #111;
     }
 
+  }
+
+  &.github {
+    .item-list-element:after {
+      font-family: $font-family-icons-social;
+      content: '\F300';
+    }
   }
 }
 
@@ -110,10 +149,16 @@ header.with-anchor {
 
   p {
     margin-top: 0;
+    @include max-width;
   }
 }
 
 .bottom-box {
   text-align: center;
   margin-top: 3em;
+
+  p {
+    @include max-width;
+  }
 }
+
