@@ -45,6 +45,20 @@
     font-family: $font-family-icons-social;
     content: '\F300';
   }
+
+  &.feedback:after {
+    content: '\E758';
+  }
+
+  &.soundcloud:after {
+    font-family: $font-family-icons-social;
+    content: '\F348';
+  }
+
+  &.zerply:after {
+    content: '\E722';
+  }
+  
 }
 
 .page {
