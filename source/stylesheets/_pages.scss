@@ -17,6 +17,11 @@
     }
   }
 
+  h2 {
+    @include max-width;
+    text-align: center;
+  }
+
   @media only screen and (min-width: 30em) {
     .image {
       height: 21em;

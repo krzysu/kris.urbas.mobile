@@ -1,5 +1,7 @@
 KrisMobile.Slider =
 
+  isMovedByFunction: false
+
   pages:
     # 'page-id':
     #   functionName: router callback
@@ -54,15 +56,19 @@ KrisMobile.Slider =
       start: ->
         KrisMobile.Page.show()
 
+      before: =>
+        @isMovedByFunction = false
+        
       after: (slider) =>
-        name = @getSlideName(slider.currentSlide)
-        router.navigate @pages[name]['path'],
-          trigger:
-            false
+        unless @isMovedByFunction
+          name = @getSlideName(slider.currentSlide)
+          router.navigate @pages[name]['path'],
+            trigger:
+              false
 
-        KrisMobile.MainMenu.hide()
-        @removeHidden()
-        @setBodyClass(name)
+          KrisMobile.MainMenu.hide()
+          @removeHidden()
+          @setBodyClass(name)
 
     @slider = $slider.data('flexslider')
 
@@ -77,7 +83,8 @@ KrisMobile.Slider =
 
 
   getSlideName: (number) ->
-    name = @slider.slides[number].id
+    if number?
+      name = @slider.slides[number].id
 
 
   moveTo: (target) ->
@@ -87,8 +94,8 @@ KrisMobile.Slider =
 
     KrisMobile.MainMenu.hide()
 
-    # $(window).scrollTop(0)
     KrisMobile.AutoScroller.scrollTo 'body', =>
+      @isMovedByFunction = true
       @slider.flexAnimate(target, true)
       @removeHidden()
       @setBodyClass(name)

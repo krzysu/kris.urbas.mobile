@@ -76,11 +76,6 @@
 
 .page {
   padding-bottom: 6em;
-
-  h2 {
-    @include max-width;
-    text-align: center;
-  }
 }
 
 .item-list {
