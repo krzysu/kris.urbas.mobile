@@ -139,16 +139,6 @@ a.item-list-element {
   }
 }
 
-header.with-anchor {
-  position: relative;
-
-  a.anchor {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
-
 .icon {
   @include icon-base;
 }

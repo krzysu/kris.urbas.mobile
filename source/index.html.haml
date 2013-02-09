@@ -20,15 +20,12 @@
   .wrapper
     .flexslider
       %ul.slides
-        %li#index-page
-          .page
-            = partial 'partials/index'
-        %li#about-page
-          .page
-            = partial 'partials/about'
-        %li#contact-page
-          .page
-            = partial 'partials/contact'
+        %li#index-page.page
+          = partial 'partials/index'
+        %li#about-page.page
+          = partial 'partials/about'
+        %li#contact-page.page
+          = partial 'partials/contact'
 
 %section
   .wrapper
@@ -43,21 +40,16 @@
 
 // dynamically created
 %ul.hidden
-  %li#about-front-end-page
-    .page
-      = partial 'partials/about_front_end'
-  %li#about-startups-page
-    .page
-      = partial 'partials/about_startups'
-  %li#about-open-source-page
-    .page
-      = partial 'partials/about_open_source'
-  %li#about-job-offer-page
-    .page
-      = partial 'partials/about_job_offer'
-  %li#about-music-page
-    .page
-      = partial 'partials/about_music'
+  %li#about-front-end-page.page
+    = partial 'partials/about_front_end'
+  %li#about-startups-page.page
+    = partial 'partials/about_startups'
+  %li#about-open-source-page.page
+    = partial 'partials/about_open_source'
+  %li#about-job-offer-page.page
+    = partial 'partials/about_job_offer'
+  %li#about-music-page.page
+    = partial 'partials/about_music'
 
 
 
