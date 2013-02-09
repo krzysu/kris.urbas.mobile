@@ -19,6 +19,10 @@
     text-decoration: none;
   }
 
+  &.alt {
+    border: 1px dashed $color-reverse-alt;
+  }
+
   &.with-icon {
     position: relative;
     padding-right: 3.5em;
@@ -58,7 +62,20 @@
   &.zerply:after {
     content: '\E722';
   }
-  
+
+  &.facebook:after {
+    font-family: $font-family-icons-social;
+    content: '\F30E';
+  }
+
+  &.twitter:after {
+    font-family: $font-family-icons-social;
+    content: '\F309';
+  }
+}
+
+.button + .button {
+  margin-left: 1em;
 }
 
 .page {
@@ -139,10 +156,6 @@ a.item-list-element {
   }
 }
 
-.icon {
-  @include icon-base;
-}
-
 .top-box {
   text-align: center;
   margin-bottom: 2em;
@@ -163,6 +176,31 @@ a.item-list-element {
 
   p {
     @include max-width;
+  }
+}
+
+.icon {
+  @include icon-base;
+}
+
+.go-top-box {
+  text-align: center;
+  padding: 5em 0;
+
+  a {
+    display: inline-block;
+    padding: 0 0.5em;
+    color: $color-reverse;
+    @include transition(all 0.2s ease-in-out);
+
+    &:hover {
+      background-color: #222;
+      text-decoration: none;
+    }
+
+    .icon {
+      vertical-align: middle;
+    }
   }
 }
 

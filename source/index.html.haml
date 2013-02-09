@@ -27,14 +27,17 @@
         %li#contact-page.page
           = partial 'partials/contact'
 
-%section
+%section#bottom-section
   .wrapper
+    = partial 'partials/go_top'
     = partial 'partials/share'
+    = partial 'partials/go_top'
     = partial 'partials/feedback'
+    = partial 'partials/go_top'
 
-%footer#footer
-  .wrapper
-    = partial 'partials/footer'
+    #footer
+      :markdown
+        copyright &copy; Krzysztof Urbas [@krzysu](https://twitter.com/krzysu) 2013 | Entypo pictograms by Daniel Bruce [www.entypo.com](http://www.entypo.com)  
 
 
 

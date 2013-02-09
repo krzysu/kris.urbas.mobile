@@ -24,7 +24,11 @@
   }
 }
 
-#feedback-section, #share-section {
-  @include reverse-bg;
-  min-height: 20em;
+
+#feedback-section {
+  textarea {
+    @include max-width;
+    margin-bottom: 1em;
+    display: block;
+  }
 }
