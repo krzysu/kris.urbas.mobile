@@ -14,6 +14,7 @@ class KrisMobile.AppRouter extends Backbone.Router
     # rest of routes in KrisMobile.Slider.pages object
 
   index: ->
+    KrisMobile.Page.toggleImages()
     @slider.moveTo('index-page')
 
   about: ->

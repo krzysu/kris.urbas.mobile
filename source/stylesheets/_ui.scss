@@ -54,6 +54,10 @@
     content: '\E758';
   }
 
+  &.share:after {
+    content: '\E758';
+  }
+
   &.soundcloud:after {
     font-family: $font-family-icons-social;
     content: '\F348';

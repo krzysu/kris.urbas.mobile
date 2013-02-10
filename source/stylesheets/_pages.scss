@@ -10,7 +10,7 @@
     margin: 0 auto;
     max-width: 80%;
 
-    @include transition(all 1s ease-in-out);
+    @include transition(height 0.5s ease-in-out);
 
     &.alt {
       background-image: url(../images/home.jpg);

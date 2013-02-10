@@ -27,7 +27,7 @@ KrisMobile.Feedback =
         @showError()
         @hideSuccess()
 
-    @$textarea.on 'keypress', (e) =>
+    @$textarea.on 'keyup', (e) =>
       @hideError()
         
 

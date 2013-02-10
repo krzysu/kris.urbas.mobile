@@ -1,6 +1,6 @@
 KrisMobile.AutoScroller =
   scrollTo: (el, afterCallback) ->
-    destination = $(el).offset().top
+    destination = $(el).offset().top - 20
 
     $("html:not(:animated), body:not(:animated)").animate
       scrollTop: destination

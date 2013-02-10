@@ -4,8 +4,8 @@ $ ->
 class KrisMobile.AppController
   constructor: ->
 
-    @initAnchors()
-    @switchImages()
+    KrisMobile.Page.initAnchors()
+    KrisMobile.Page.toggleImages()
     KrisMobile.MainMenu.init()
     KrisMobile.Feedback.init()
 
@@ -15,14 +15,4 @@ class KrisMobile.AppController
       pushState: false
 
 
-  initAnchors: ->
-    $(document).on 'click', 'a', (e) ->
-      if $(e.currentTarget).hasClass('anchor') 
-        e.preventDefault()
-        KrisMobile.AutoScroller.scrollTo $(e.currentTarget).attr('href')
 
-  switchImages: ->
-    random0or1 = Math.round(Math.random() * 1)
-
-    if random0or1 == 0
-      $('#index-page .image').addClass('alt')
