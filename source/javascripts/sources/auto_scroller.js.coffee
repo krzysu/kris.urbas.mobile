@@ -1,5 +1,5 @@
-class KrisMobile.AutoScroller
-  @scrollTo: (el, afterCallback) ->
+KrisMobile.AutoScroller =
+  scrollTo: (el, afterCallback) ->
     destination = $(el).offset().top
 
     $("html:not(:animated), body:not(:animated)").animate

@@ -5,7 +5,12 @@
   
 
   .bottom-box
-    %textarea{:placeholder => "what you don't like or would have done better?"}
-    %a.button.alt{:href => '#'} send
+    %form#feedback-form
+      %textarea{:placeholder => "what you don't like or would have done better?"}
+      %a.button.alt{:href => '#'} send
+      .error-msg
+        Please write at least few words :/
+      .success-msg
+        Thanks!
 
 

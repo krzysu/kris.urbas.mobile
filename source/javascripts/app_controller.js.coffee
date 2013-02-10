@@ -7,6 +7,7 @@ class KrisMobile.AppController
     @initAnchors()
     @switchImages()
     KrisMobile.MainMenu.init()
+    KrisMobile.Feedback.init()
 
     router = new KrisMobile.AppRouter()
 

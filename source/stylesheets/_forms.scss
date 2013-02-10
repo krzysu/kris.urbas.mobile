@@ -23,3 +23,23 @@ textarea {
   resize: vertical;
   min-height: 8em;
 }
+
+.with-error {
+  border-color: #bc0f17;
+}
+
+.error-msg, .success-msg {
+  font-family: $font-header;
+  font-size: 1em;
+  margin: 1em 0;
+  font-weight: bold;
+  display: none;
+}
+
+.error-msg {
+  color: #bc0f17;
+}
+
+.success-msg {
+  color: #00aa0c;
+}
