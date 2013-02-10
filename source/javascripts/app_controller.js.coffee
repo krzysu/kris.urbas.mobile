@@ -4,6 +4,7 @@ $ ->
 class KrisMobile.AppController
   constructor: ->
 
+    KrisMobile.Tracking.init()
     KrisMobile.Page.initAnchors()
     KrisMobile.Page.toggleImages()
     KrisMobile.MainMenu.init()
