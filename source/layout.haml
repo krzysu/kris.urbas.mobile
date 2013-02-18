@@ -36,7 +36,9 @@
       if( location.host == 'myviews.pl' || location.host == 'www.myviews.pl') {
 
         var _gaq = _gaq || [];
+        var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
         _gaq.push(['_setAccount', 'UA-9904630-1']);
+        _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
         _gaq.push(['_trackPageview']);
         _gaq.push(['_trackPageLoadTime']);
         _gaq.push(['_anonymizeIp']);
