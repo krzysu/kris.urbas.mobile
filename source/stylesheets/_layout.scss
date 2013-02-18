@@ -30,7 +30,7 @@
   }
 
   .title {
-    line-height: 4em;
+    line-height: 3em;
     float: left;
   }
 }
@@ -56,10 +56,10 @@
 
 // top menu
 .go-to-menu {
-  width: 0.6em;
-  height: 1em;
+  @include icon-base;
   float: right;
   text-align: center;
+  padding: 0 0.2em;
 
   &:hover {
     text-decoration: none;
@@ -97,23 +97,27 @@
     &:after {
       @include icon-base;
       position: absolute;
-      left: 0.1em;
+      left: 0.4em;
       top: 50%;
-      margin-top: -0.5em;
+      margin-top: -0.7em;
       color: #fff;
     }
   }
 
   .menu-start:after {
-    content: '\E723';
+    content: '\e724';
   }
 
   .menu-about:after {
-    content: '\E800';
+    content: '\e738';
   }
 
   .menu-contact:after {
     content: '\E720';
+  }
+
+  .menu-blog:after {
+    content: '\2712';
   }
 
 }

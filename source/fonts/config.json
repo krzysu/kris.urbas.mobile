@@ -1,0 +1,358 @@
+{
+  "name": "",
+  "glyphs": [
+    {
+      "search": [
+        "home"
+      ],
+      "code": 8962,
+      "uid": "513ac180ff85bd275f2b736720cbbf5e",
+      "css": "home",
+      "orig_css": "home",
+      "orig_code": 8962,
+      "src": "entypo",
+      "from": 8962
+    },
+    {
+      "search": [
+        "menu",
+        "list"
+      ],
+      "code": 9776,
+      "uid": "2cfb3f2b46b34a1790aec0aa846297b6",
+      "css": "menu",
+      "orig_css": "menu",
+      "orig_code": 9776,
+      "src": "entypo",
+      "from": 9776
+    },
+    {
+      "search": [
+        "mail",
+        "email"
+      ],
+      "code": 9993,
+      "uid": "e335adbc2d898c7d85d40c507796e7b4",
+      "css": "mail",
+      "orig_css": "mail",
+      "orig_code": 9993,
+      "src": "entypo",
+      "from": 9993
+    },
+    {
+      "search": [
+        "pencil",
+        "write",
+        "reply",
+        "edit"
+      ],
+      "code": 9998,
+      "uid": "c77fd2fd065b5fe16d6f2b41e190b266",
+      "css": "pencil",
+      "orig_css": "pencil",
+      "orig_code": 9998,
+      "src": "entypo",
+      "from": 9998
+    },
+    {
+      "search": [
+        "pen",
+        "write",
+        "reply",
+        "edit",
+        "feather"
+      ],
+      "code": 10002,
+      "uid": "bcb868184ff9c35f8aef564f50c0d649",
+      "css": "feather",
+      "orig_css": "feather",
+      "orig_code": 10002,
+      "src": "entypo",
+      "from": 10002
+    },
+    {
+      "search": [
+        "export",
+        "share"
+      ],
+      "code": 59157,
+      "uid": "390d6d13398cbf8c8c3c5493f7d34088",
+      "css": "export",
+      "orig_css": "export",
+      "orig_code": 59157,
+      "src": "entypo",
+      "from": 59157
+    },
+    {
+      "search": [
+        "chat",
+        "talk"
+      ],
+      "code": 59168,
+      "uid": "2c0b53280f82068f6bab4e2200025d9f",
+      "css": "chat",
+      "orig_css": "chat",
+      "orig_code": 59168,
+      "src": "entypo",
+      "from": 59168
+    },
+    {
+      "search": [
+        "contact",
+        "card",
+        "vcard"
+      ],
+      "code": 59170,
+      "uid": "457c8e2b305e7af74c1be4f07a01ca92",
+      "css": "vcard",
+      "orig_css": "vcard",
+      "orig_code": 59170,
+      "src": "entypo",
+      "from": 59170
+    },
+    {
+      "search": [
+        "address"
+      ],
+      "code": 59171,
+      "uid": "540b6a4262be769515c79700618b4aea",
+      "css": "address",
+      "orig_css": "address",
+      "orig_code": 59171,
+      "src": "entypo",
+      "from": 59171
+    },
+    {
+      "search": [
+        "archive"
+      ],
+      "code": 59192,
+      "from": 59192,
+      "uid": "96ea1be71f597a5bdfc8f791ada4f651",
+      "css": "archive",
+      "orig_css": "archive",
+      "orig_code": 59192,
+      "src": "entypo"
+    },
+    {
+      "search": [
+        "share"
+      ],
+      "code": 59196,
+      "uid": "91426c82d94428a33353e495418435e3",
+      "css": "share",
+      "orig_css": "share",
+      "orig_code": 59196,
+      "src": "entypo",
+      "from": 59196
+    },
+    {
+      "search": [
+        "arrow",
+        "down",
+        "download"
+      ],
+      "code": 59224,
+      "uid": "40ef3542646bed70cb63f1290c9d98c9",
+      "css": "down-circled",
+      "orig_css": "down-circled",
+      "orig_code": 59224,
+      "src": "entypo",
+      "from": 59224
+    },
+    {
+      "search": [
+        "arrow",
+        "left"
+      ],
+      "code": 59225,
+      "uid": "0db0310883e0bdacfd1bb2d394238e8a",
+      "css": "left-circled",
+      "orig_css": "left-circled",
+      "orig_code": 59225,
+      "src": "entypo",
+      "from": 59225
+    },
+    {
+      "search": [
+        "arrow",
+        "right"
+      ],
+      "code": 59226,
+      "uid": "52725ff4d4042964bd3a60609bf3695b",
+      "css": "right-circled",
+      "orig_css": "right-circled",
+      "orig_code": 59226,
+      "src": "entypo",
+      "from": 59226
+    },
+    {
+      "search": [
+        "arrow",
+        "up",
+        "upload"
+      ],
+      "code": 59227,
+      "uid": "64691230b90991883f94c6dfb2afc90a",
+      "css": "up-circled",
+      "orig_css": "up-circled",
+      "orig_code": 59227,
+      "src": "entypo",
+      "from": 59227
+    },
+    {
+      "search": [
+        "github",
+        "social",
+        "logo"
+      ],
+      "code": 62208,
+      "uid": "d94334f23acba022bfd68e49d76b31bb",
+      "css": "github",
+      "orig_css": "github",
+      "orig_code": 62208,
+      "src": "entypo",
+      "from": 62208
+    },
+    {
+      "search": [
+        "twitter",
+        "social",
+        "logo"
+      ],
+      "code": 62217,
+      "uid": "d090355c31f497b61d676416c1fd39fb",
+      "css": "twitter",
+      "orig_css": "twitter",
+      "orig_code": 62217,
+      "src": "entypo",
+      "from": 62217
+    },
+    {
+      "search": [
+        "facebook",
+        "social",
+        "logo"
+      ],
+      "code": 62222,
+      "uid": "47bd87a650e95b97f947d275ed968efe",
+      "css": "facebook-squared",
+      "orig_css": "facebook-squared",
+      "orig_code": 62222,
+      "src": "entypo",
+      "from": 62222
+    },
+    {
+      "search": [
+        "skype",
+        "social",
+        "logo"
+      ],
+      "code": 62265,
+      "uid": "28ccaf022b8363aeaa5b86f66e1f5173",
+      "css": "skype",
+      "orig_css": "skype",
+      "orig_code": 62265,
+      "src": "entypo",
+      "from": 62265
+    },
+    {
+      "search": [
+        "soundcloud",
+        "social",
+        "logo"
+      ],
+      "code": 62280,
+      "uid": "b86600decaba538aca184421752cd640",
+      "css": "soundcloud",
+      "orig_css": "soundcloud",
+      "orig_code": 62280,
+      "src": "entypo",
+      "from": 62280
+    },
+    {
+      "search": [
+        "target"
+      ],
+      "code": 10146,
+      "uid": "3eadc3e443cf1c7e17f1b44d21254c00",
+      "css": "target",
+      "orig_css": "target",
+      "orig_code": 10146,
+      "src": "entypo",
+      "from": 127919
+    },
+    {
+      "search": [
+        "thumbs",
+        "up",
+        "like",
+        "love",
+        "vote"
+      ],
+      "code": 59201,
+      "uid": "7ad4d2306ebda8452e5e3eff3cd8241c",
+      "css": "thumbs-up",
+      "orig_css": "thumbs-up",
+      "orig_code": 59201,
+      "src": "entypo",
+      "from": 128077
+    },
+    {
+      "search": [
+        "thumbs",
+        "down",
+        "dislike",
+        "unlike",
+        "vote"
+      ],
+      "code": 59202,
+      "uid": "429fba993b729174468a9493613ad1ba",
+      "css": "thumbs-down",
+      "orig_css": "thumbs-down",
+      "orig_code": 59202,
+      "src": "entypo",
+      "from": 128078
+    },
+    {
+      "search": [
+        "profile",
+        "contact",
+        "user"
+      ],
+      "code": 59193,
+      "uid": "bbd66ef66bb8fa9edde54d9a90b89150",
+      "css": "user",
+      "orig_css": "user",
+      "orig_code": 59193,
+      "src": "entypo",
+      "from": 128100
+    },
+    {
+      "search": [
+        "newspaper",
+        "article"
+      ],
+      "code": 59200,
+      "uid": "da0fd38d651815e3a12f6c030ff1fe5b",
+      "css": "newspaper",
+      "orig_css": "newspaper",
+      "orig_code": 59200,
+      "src": "entypo",
+      "from": 128240
+    },
+    {
+      "search": [
+        "rocket",
+        "fly"
+      ],
+      "code": 59172,
+      "uid": "9c7fd7637a41b59a358cb70893f945a5",
+      "css": "rocket",
+      "orig_css": "rocket",
+      "orig_code": 59172,
+      "src": "entypo",
+      "from": 128640
+    }
+  ]
+}

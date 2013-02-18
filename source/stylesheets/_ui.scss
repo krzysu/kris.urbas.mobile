@@ -32,12 +32,12 @@
       content: '\E75A';
 
       font-weight: normal;
-      font-size: 2.5em;
+      font-size: 1.5em;
 
       position: absolute;
-      right: 0.3em;
+      right: 0.6em;
       top: 50%;
-      margin-top: -0.5em;
+      margin-top: -0.7em;
     }
   }
 
@@ -46,7 +46,6 @@
   }
 
   &.github:after {
-    font-family: $font-family-icons-social;
     content: '\F300';
   }
 
@@ -59,7 +58,6 @@
   }
 
   &.soundcloud:after {
-    font-family: $font-family-icons-social;
     content: '\F348';
   }
 
@@ -68,12 +66,10 @@
   }
 
   &.facebook:after {
-    font-family: $font-family-icons-social;
     content: '\F30E';
   }
 
   &.twitter:after {
-    font-family: $font-family-icons-social;
     content: '\F309';
   }
 }
@@ -95,7 +91,6 @@
 
   &.github {
     .item-list-element:after {
-      font-family: $font-family-icons-social;
       content: '\F300';
     }
   }
@@ -120,9 +115,9 @@
     content: '\E75A';
 
     position: absolute;
-    right: 0.1em;
+    right: 0.2em;
     top: 50%;
-    margin-top: -0.5em;
+    margin-top: -0.7em;
   }
 
   &.email:after {
@@ -130,12 +125,10 @@
   }
 
   &.twitter:after {
-    font-family: $font-family-icons-social;
     content: '\F309';
   }
 
   &.skype:after {
-    font-family: $font-family-icons-social;
     content: '\F339';
   }
 
