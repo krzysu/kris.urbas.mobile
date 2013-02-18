@@ -3,11 +3,11 @@ class KrisMobile.GoogleEventTracker
 
   report: (name, label, value) ->
     unless value?
-      # _gaq.push ['_trackEvent', @pageName, name, label.toString()]
-      console.log('_gaq.push', @pageName + ' | ', name + ' | ', label.toString())
+      _gaq.push ['_trackEvent', @pageName, name, label.toString()]
+      # console.log('_gaq.push', @pageName + ' | ', name + ' | ', label.toString())
     else
-      # _gaq.push ['_trackEvent', @pageName, name, label.toString(), parseInt(value, 10)]
-      console.log('_gaq.push', @pageName + ' | ', name + ' | ', label.toString() + ' | ', parseInt(value, 10))
+      _gaq.push ['_trackEvent', @pageName, name, label.toString(), parseInt(value, 10)]
+      # console.log('_gaq.push', @pageName + ' | ', name + ' | ', label.toString() + ' | ', parseInt(value, 10))
 
   initElements: (elements) ->
     $.each elements, (index, item) =>
