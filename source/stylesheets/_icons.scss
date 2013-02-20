@@ -1,0 +1,67 @@
+// all icons
+.item-list-element, .button.with-icon, .menu-item {
+
+  // menu
+  &.start:after {
+    content: '\e724';
+  }
+
+  &.about:after {
+    content: '\e738';
+  }
+
+  &.contact:after {
+    content: '\E720';
+  }
+
+  &.blog:after {
+    content: '\2712';
+  }
+
+  // contact
+  &.email:after {
+    content: '\2709';
+  }
+
+  &.skype:after {
+    content: '\F339';
+  }
+
+  // social
+  &.twitter:after {
+    content: '\F309';
+  }
+
+  &.github:after {
+    content: '\F300';
+  }
+  
+  &.soundcloud:after {
+    content: '\F348';
+  }
+
+  &.zerply:after {
+    content: '\E722';
+  }
+
+  &.facebook:after {
+    content: '\F30E';
+  }
+
+  // others
+  &.location:after {
+    content: '\27A2';
+  }
+
+  &.external:after {
+    content: '\E715';
+  }
+
+  &.feedback:after {
+    content: '\E758';
+  }
+
+  &.share:after {
+    content: '\E758';
+  }
+}  

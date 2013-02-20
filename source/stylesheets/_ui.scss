@@ -40,38 +40,6 @@
       margin-top: -0.7em;
     }
   }
-
-  &.external:after {
-    content: '\E715';
-  }
-
-  &.github:after {
-    content: '\F300';
-  }
-
-  &.feedback:after {
-    content: '\E758';
-  }
-
-  &.share:after {
-    content: '\E758';
-  }
-
-  &.soundcloud:after {
-    content: '\F348';
-  }
-
-  &.zerply:after {
-    content: '\E722';
-  }
-
-  &.facebook:after {
-    content: '\F30E';
-  }
-
-  &.twitter:after {
-    content: '\F309';
-  }
 }
 
 .page {
@@ -119,22 +87,6 @@
     top: 50%;
     margin-top: -0.7em;
   }
-
-  &.email:after {
-    content: '\2709';
-  }
-
-  &.twitter:after {
-    content: '\F309';
-  }
-
-  &.skype:after {
-    content: '\F339';
-  }
-
-  &.location:after {
-    content: '\27A2';
-  }
 }
 
 a.item-list-element {
@@ -150,6 +102,10 @@ a.item-list-element {
 
   h1 {
     margin-bottom: 0;
+  }
+
+  .more-below {
+    margin-bottom: 0.67em; 
   }
 
   p {

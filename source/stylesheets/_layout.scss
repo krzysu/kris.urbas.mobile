@@ -89,7 +89,7 @@
     text-decoration: none;
   }
 
-  li {
+  .menu-item {
     list-style: none;
     border-top: 1px dashed $color-reverse-alt;
     position: relative;
@@ -103,23 +103,6 @@
       color: #fff;
     }
   }
-
-  .menu-start:after {
-    content: '\e724';
-  }
-
-  .menu-about:after {
-    content: '\e738';
-  }
-
-  .menu-contact:after {
-    content: '\E720';
-  }
-
-  .menu-blog:after {
-    content: '\2712';
-  }
-
 }
 
 // @media only screen and (min-width: 40em) {
