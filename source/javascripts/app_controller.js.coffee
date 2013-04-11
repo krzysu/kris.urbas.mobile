@@ -7,6 +7,7 @@ class KrisMobile.AppController
     KrisMobile.Tracking.init()
     KrisMobile.Page.initAnchors()
     KrisMobile.Page.toggleImages()
+    KrisMobile.Page.setEmail()
     KrisMobile.MainMenu.init()
     KrisMobile.Feedback.init()
 
