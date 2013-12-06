@@ -26,6 +26,9 @@ class KrisMobile.AppRouter extends Backbone.Router
   aboutFrontEnd: ->
     @_createSlideAndMove('about-front-end-page')
 
+  aboutGameDev: ->
+    @_createSlideAndMove('about-game-dev-page')
+
   aboutStartups: ->
     @_createSlideAndMove('about-startups-page')
 

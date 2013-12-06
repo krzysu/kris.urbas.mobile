@@ -7,7 +7,7 @@ KrisMobile.Slider =
     #   functionName: router callback
     #   path: router url
     #   hidden: dynamically created
-   
+
     'index-page':
       functionName: 'index'
       path: '!/'
@@ -20,7 +20,12 @@ KrisMobile.Slider =
       functionName: 'aboutFrontEnd'
       path: '!/about-front-end'
       hidden: true
-    
+
+    'about-game-dev-page':
+      functionName: 'aboutGameDev'
+      path: '!/about-game-dev'
+      hidden: true
+
     'about-open-source-page':
       functionName: 'aboutOpenSource'
       path: '!/about-open-source'
@@ -58,7 +63,7 @@ KrisMobile.Slider =
 
       before: =>
         @isMovedByFunction = false
-        
+
       after: (slider) =>
         unless @isMovedByFunction
           name = @getSlideName(slider.currentSlide)
