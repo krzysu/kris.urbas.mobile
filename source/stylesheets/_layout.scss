@@ -61,7 +61,7 @@
   text-align: center;
   padding: 0 0.2em;
 
-  &:hover {
+  &:hover, &:active, &:focus {
     text-decoration: none;
   }
 }

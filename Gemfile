@@ -1,14 +1,14 @@
-source :rubygems
+# If you do not have OpenSSL installed, update
+# the following line to use "http://" instead
+source 'https://rubygems.org'
 
-gem "middleman", "~>3.0.11"
+gem "middleman", "~>3.3.7"
 
-# windows
-# gem 'rb-fchange'
-# gem 'rb-notifu'
-# gem 'win32console'
+# Live-reloading plugin
+gem "middleman-livereload", "~> 3.1.0"
 
-# linux
-# gem 'therubyracer'
-# gem 'rb-inotify'
-# gem 'livereload'
-# gem 'middleman-livereload'
+# For faster file watcher updates on Windows:
+gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
+
+# Windows does not come with time zone data
+gem "tzinfo-data", platforms: [:mswin, :mingw]
