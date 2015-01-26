@@ -14,7 +14,7 @@
 
   @include transition(all 0.2s ease-in-out);
 
-  &:hover {
+  &:hover, &:active, &:focus {
     background-color: #222;
     text-decoration: none;
   }
@@ -91,7 +91,7 @@
 }
 
 a.item-list-element {
-  &:hover {
+  &:hover, &:active, &:focus {
     text-decoration: none;
     background: #ddd;
   }
@@ -99,7 +99,7 @@ a.item-list-element {
 
 .top-box {
   text-align: center;
-  margin-bottom: 2em;
+  margin: 2em 0;
 
   h1 {
     margin-bottom: 0;
@@ -113,6 +113,11 @@ a.item-list-element {
     margin-top: 0;
     @include max-width;
   }
+}
+
+.middle-box {
+  text-align: center;
+  margin: 2em 0;
 }
 
 .bottom-box {
