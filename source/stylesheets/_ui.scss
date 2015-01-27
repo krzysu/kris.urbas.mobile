@@ -10,23 +10,23 @@
   padding: 0.5em 1em;
   font-size: 1.2em;
   font-weight: bold;
-  font-family: $font-header;
+  font-family: $font-family;
 
   @include transition(all 0.2s ease-in-out);
 
   &:hover, &:active, &:focus {
-    background-color: #222;
+    background-color: $color-extra;
     text-decoration: none;
   }
 
   &.alt {
-    border: 1px dashed $color-reverse-alt;
+    border: 1px solid $color-reverse-alt;
   }
 
   &.with-icon {
     position: relative;
     padding-right: 3.5em;
-    
+
     &:after {
       @include icon-base;
       content: '\E75A';
@@ -51,7 +51,7 @@
   .item-list-element {
     border-bottom: 1px solid #111;
     display: block;
-    
+
     &:first-child {
       border-top: 1px solid #111;
     }
@@ -68,6 +68,7 @@
 .item-list-element {
   position: relative;
   padding: 0.8em 2.5em 0.8em 0.5em;
+  @include transition(all 0.2s ease-in-out);
 
   .primary {
     font-size: 1.4em;
@@ -93,9 +94,10 @@
 a.item-list-element {
   &:hover, &:active, &:focus {
     text-decoration: none;
-    background: #ddd;
+    background: lighten($color-extra, 55%);
   }
 }
+
 
 .top-box {
   text-align: center;
@@ -103,10 +105,6 @@ a.item-list-element {
 
   h1 {
     margin-bottom: 0;
-  }
-
-  .more-below {
-    margin-bottom: 0.67em; 
   }
 
   p {
@@ -143,8 +141,8 @@ a.item-list-element {
     color: $color-reverse;
     @include transition(all 0.2s ease-in-out);
 
-    &:hover {
-      background-color: #222;
+    &:hover, &:active, &:focus {
+      background-color: $color-extra;
       text-decoration: none;
     }
 

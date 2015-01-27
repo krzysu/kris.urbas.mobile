@@ -27,9 +27,10 @@
       %script{:src => "http://html5shiv.googlecode.com/svn/trunk/html5.js"}
       = javascript_include_tag 'ie/selectivizr-min.js'
 
+    %link{:href => 'http://fonts.googleapis.com/css?family=Lato|Merriweather:400,900', :rel => 'stylesheet', :type => 'text/css'}
     = stylesheet_link_tag "application"
     = yield_content :head
-  
+
     // google analytics
     :javascript
 

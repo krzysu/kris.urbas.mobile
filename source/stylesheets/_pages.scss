@@ -1,10 +1,5 @@
 #index-page {
 
-  header {
-    // for beta info only
-    position: relative;
-  }
-
   .image {
     background-image: url(../images/home2.jpg);
     background-repeat: no-repeat;
@@ -22,6 +17,15 @@
     }
   }
 
+  h1, h2 {
+    font-weight: normal;
+
+    em {
+      font-weight: 900;
+      font-style: normal;
+    }
+  }
+
   h2 {
     @include max-width;
     text-align: center;
@@ -33,24 +37,6 @@
     }
   }
 }
-
-#beta-info {
-  position: absolute;
-  right: 6%;
-  bottom: -5em;
-  @include reverse-bg;
-  @include transform( rotate(15deg) );  
-  padding: 0.5em 0.8em;
-
-  font-size: 0.85em;
-  line-height: 1.2em;
-
-  strong {
-    display: block;
-    font-size: 1.2em;
-  }
-}
-
 
 #feedback-section {
   min-height: 18em;
