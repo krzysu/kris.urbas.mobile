@@ -29,14 +29,18 @@
         %li#contact-page.page
           = partial 'partials/contact'
 
-%section#bottom-section
+%section.bottom-section
   .wrapper
-    = partial 'partials/go_top'
     = partial 'partials/share'
     = partial 'partials/go_top'
+
+%section.bottom-section
+  .wrapper
     = partial 'partials/feedback'
     = partial 'partials/go_top'
 
+%section.bottom-section
+  .wrapper
     #footer
       :markdown
         [&nbsp;](http://nie-spamuj.eu/email.php)

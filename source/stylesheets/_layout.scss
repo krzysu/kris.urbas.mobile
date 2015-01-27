@@ -44,12 +44,14 @@
   display: none;
 }
 
-#bottom-section {
+.bottom-section {
+  border-top: 3em solid $color-reverse;
+  padding-top: 2em;
   @include reverse-bg;
 }
 
 #footer {
-  margin: 4em 0 2em;
+  margin: 0 0 3em;
   font-size: 0.8em;
   line-height: 1.4em;
   text-align: center;
@@ -98,7 +100,7 @@
 
   .menu-item {
     list-style: none;
-    border-top: 1px dashed $color-reverse-alt;
+    border-top: 1px solid $color-reverse-alt;
     position: relative;
 
     &:after {
