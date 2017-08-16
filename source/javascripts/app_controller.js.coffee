@@ -9,12 +9,8 @@ class KrisMobile.AppController
     KrisMobile.Page.toggleImages()
     KrisMobile.Page.setEmail()
     KrisMobile.MainMenu.init()
-    KrisMobile.Feedback.init()
 
     router = new KrisMobile.AppRouter()
 
     Backbone.history.start
       pushState: false
-
-
-

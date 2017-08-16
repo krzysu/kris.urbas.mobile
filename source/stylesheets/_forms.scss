@@ -3,7 +3,7 @@ button, input, select, textarea {
   font-family: $font-family;
 }
 
-input[type="text"], input[type="password"], select, textarea { 
+input[type="text"], input[type="password"], select, textarea {
   outline: 0;
   background: $color-alt;
   color: $color-reverse;
@@ -23,24 +23,4 @@ input[type="text"]:focus, input[type="text"]:active, select:focus, select:active
 textarea {
   resize: vertical;
   min-height: 8em;
-}
-
-.with-error {
-  border-color: #bc0f17;
-}
-
-.error-msg, .success-msg {
-  font-family: $font-header;
-  font-size: 1em;
-  margin: 1em 0;
-  font-weight: bold;
-  display: none;
-}
-
-.error-msg {
-  color: #bc0f17;
-}
-
-.success-msg {
-  color: #00aa0c;
 }

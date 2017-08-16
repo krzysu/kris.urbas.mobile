@@ -38,15 +38,6 @@
   }
 }
 
-#feedback-section {
-  min-height: 18em;
-  textarea {
-    @include max-width;
-    margin-bottom: 1em;
-    display: block;
-  }
-}
-
 #share-section {
   .button {
     margin: 0 0.5em 1em;

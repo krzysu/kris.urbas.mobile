@@ -24,7 +24,7 @@
 
 #header {
   @include reverse-bg;
-  
+
   .wrapper {
     @include pie-clearfix;
   }
@@ -45,7 +45,6 @@
 }
 
 .bottom-section {
-  border-top: 3em solid $color-reverse;
   padding-top: 2em;
   @include reverse-bg;
 }
@@ -115,7 +114,7 @@
 }
 
 // @media only screen and (min-width: 40em) {
-  
+
 //   .go-to-menu.icon {
 //     display: none;
 //   }
